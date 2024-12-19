@@ -1,0 +1,20 @@
+[0.598s] Invoking command in '/home/nathan/dronut/src/dronut_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/dronut_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dronut_description build --build-base /home/nathan/dronut/build/dronut_description/build install --record /home/nathan/dronut/build/dronut_description/install.log --single-version-externally-managed install_data
+[0.790s] running egg_info
+[0.803s] writing ../../build/dronut_description/dronut_description.egg-info/PKG-INFO
+[0.803s] writing dependency_links to ../../build/dronut_description/dronut_description.egg-info/dependency_links.txt
+[0.803s] writing requirements to ../../build/dronut_description/dronut_description.egg-info/requires.txt
+[0.803s] writing top-level names to ../../build/dronut_description/dronut_description.egg-info/top_level.txt
+[0.831s] reading manifest file '../../build/dronut_description/dronut_description.egg-info/SOURCES.txt'
+[0.832s] writing manifest file '../../build/dronut_description/dronut_description.egg-info/SOURCES.txt'
+[0.832s] running build
+[0.832s] running build_py
+[0.832s] running install
+[0.836s] running install_lib
+[0.850s] running install_data
+[0.850s] copying urdf/x1.urdf.xacro -> /home/nathan/dronut/install/dronut_description/share/dronut_description/urdf
+[0.851s] running install_egg_info
+[0.866s] removing '/home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages/dronut_description-0.0.0-py3.12.egg-info' (and everything under it)
+[0.866s] Copying ../../build/dronut_description/dronut_description.egg-info to /home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages/dronut_description-0.0.0-py3.12.egg-info
+[0.867s] running install_scripts
+[0.958s] writing list of installed files to '/home/nathan/dronut/build/dronut_description/install.log'
+[0.975s] Invoked command in '/home/nathan/dronut/src/dronut_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/dronut_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dronut_description build --build-base /home/nathan/dronut/build/dronut_description/build install --record /home/nathan/dronut/build/dronut_description/install.log --single-version-externally-managed install_data
