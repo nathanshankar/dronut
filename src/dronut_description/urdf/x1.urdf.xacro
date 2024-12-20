@@ -1,4 +1,8 @@
-<robot name="onshape">
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dronut">
+
+<xacro:include filename="$(find dronut_description)/urdf/x1.gazebo.xacro"/>
+
 <link name="part_9">
 <visual>
 <origin xyz="7.6327832942979512154e-17 -2.7755575615628913511e-17 0.085000000000000006106" rpy="-4.3368086899420129212e-19 -2.3418766925686843389e-17 4.5622041572063771955e-17" />
@@ -597,6 +601,5 @@
 <limit effort="1" velocity="20" lower="-0.018" upper="0.009"/>
 <joint_properties friction="0.0"/>
 </joint>
-
 
 </robot>
