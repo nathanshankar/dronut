@@ -9,6 +9,7 @@ setup.py
 ../../build/dronut_description/dronut_description.egg-info/top_level.txt
 ../../build/dronut_description/dronut_description.egg-info/zip-safe
 dronut_description/__init__.py
+dronut_description/move.py
 launch/drone.launch.py
 launch/drone_sim.launch.py
 meshes/part_1.stl

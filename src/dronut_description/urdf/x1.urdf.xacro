@@ -497,7 +497,7 @@
 </inertial>
 </link>
 
-<joint name="slider1" type="prismatic">
+<joint name="slider_front" type="prismatic">
 <origin xyz="1.2347761702002914081e-16 -8.6977309035618530899e-17 0.022430000000000005489" rpy="-2.2551405187698405946e-17 -4.770489558936214117e-18 1.570796326794896558" />
 <parent link="part_9" />
 <child link="part_18" />
@@ -529,7 +529,7 @@
 </inertial>
 </link>
 
-<joint name="slider2" type="prismatic">
+<joint name="slider_back" type="prismatic">
 <origin xyz="6.2776311926526772165e-17 2.0448052973076597602e-17 0.036080000000000014837" rpy="2.6454533008646252723e-17 5.6378512969245521826e-18 2.2954338760707362899e-16" />
 <parent link="part_9" />
 <child link="part_17" />
@@ -561,7 +561,7 @@
 </inertial>
 </link>
 
-<joint name="slider3" type="prismatic">
+<joint name="slider_left" type="prismatic">
 <origin xyz="7.3121474153392539981e-17 -2.0789429205914076587e-17 0.022160000000000006082" rpy="-4.3368086899420129212e-19 -2.3418766925686846471e-17 4.5622041572063771955e-17" />
 <parent link="part_9" />
 <child link="part_16" />
@@ -593,7 +593,7 @@
 </inertial>
 </link>
 
-<joint name="slider4" type="prismatic">
+<joint name="slider_right" type="prismatic">
 <origin xyz="8.0144224590128492692e-17 -2.1194452443085178714e-17 0.056060000000000012599" rpy="2.2551405187698396701e-17 8.6736173798847114735e-19 -1.570796326794896558" />
 <parent link="part_9" />
 <child link="part_19" />

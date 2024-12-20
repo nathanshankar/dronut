@@ -34,6 +34,19 @@ def generate_launch_description():
         name='joint_state_publisher_gui',
     )
 
+    teleop_twist_keyboard_node = Node(
+            package='teleop_twist_keyboard', executable='teleop_twist_keyboard',
+            name='teleop_twist_keyboard_node', 
+            output='screen',
+            prefix = 'xterm -e',
+            )
+
+    node_move = Node(
+        package='dronut_description',
+        executable='move',
+        name='move',
+        output='screen')
+
     # Rviz node
     node_rviz = Node(
         package='rviz2',
@@ -47,6 +60,8 @@ def generate_launch_description():
     # Add actions to LaunchDescription
     ld.add_action(SetParameter(name='use_sim_time', value=False))
     ld.add_action(node_robot_state_publisher)
-    ld.add_action(node_joint_state_publisher)
+    ld.add_action(teleop_twist_keyboard_node)
+    #ld.add_action(node_joint_state_publisher)
+    ld.add_action(node_move)
     ld.add_action(node_rviz)
     return ld
