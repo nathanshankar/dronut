@@ -2,12 +2,12 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import JointState
+from sensor_msgs.msg import Joy
 
 class BirotorDroneController(Node):
     def __init__(self):
         super().__init__('birotor_drone_controller')
 
-        # Joint limits
         self.joint_limits = {
             'slider_front': {'lower': 0.015, 'upper': 0.041},
             'slider_back': {'lower': -0.019, 'upper': 0.008},
@@ -15,52 +15,64 @@ class BirotorDroneController(Node):
             'slider_right': {'lower': -0.018, 'upper': 0.009},
         }
 
-        # Initial joint states
         self.joint_states = {
             'slider_front': 0.015 + (0.041 - 0.015) / 2,
             'slider_back': -0.019 + (0.008 - -0.019) / 2,
             'slider_left': 0.015 + (0.041 - 0.015) / 2,
             'slider_right': -0.018 + (0.009 - -0.018) / 2,
-            'top_prop_continuous': 0.0,  # Initial rotational velocity
-            'bottom_prop_continuous': 0.0,  # Initial rotational velocity
         }
 
-        # Publisher for joint states
+        self.propeller_velocities = {
+            'top_prop_continuous': 0.0,
+            'bottom_prop_continuous': 0.0,
+        }
+
         self.joint_state_publisher = self.create_publisher(JointState, 'joint_states', 10)
 
-        # Subscriber for teleop twist keyboard inputs
-        self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
+        self.create_subscription(Joy, 'joy', self.joy_callback, 10)
 
         self.get_logger().info("Birotor Drone Controller Node Initialized")
 
-    def cmd_vel_callback(self, msg):
-        # Parse the Twist message
-        linear = msg.linear
-        angular = msg.angular
+    def joy_callback(self, msg):
+        axes = msg.axes
+        #self.get_logger().info(f"Received axes: {axes}")
 
-        if linear.z > 0:  # Ascend
-            self.set_sliders_max()
-            self.set_propellers_spin(rate=1.0)  # Set propellers to max spin
-        elif linear.z < 0:  # Descend
-            self.set_sliders_min()
-            self.set_propellers_spin(rate=0.5)  # Set propellers to a slower spin
-        elif linear.x > 0:  # Move forward
-            self.move_forward()
-            self.set_propellers_spin(rate=0.8)
-        elif linear.x < 0:  # Move backward
-            self.move_backward()
-            self.set_propellers_spin(rate=0.8)
-        elif angular.z > 0:  # Move left
-            self.move_left()
-            self.set_propellers_spin(rate=0.8)
-        elif angular.z < 0:  # Move right
+        # Assuming the axes are ordered as follows (based on typical joystick setups):
+        # axes[1] -> Left Stick Y (up/down) - used for ascend and descend
+        # axes[3] -> Right Stick X (left/right) - used for left and right
+        # axes[4] -> Right Stick Y (up/down) - used for forward and backward
+
+        if axes[3] < -0.1:
             self.move_right()
             self.set_propellers_spin(rate=0.8)
-        else:  # Hover
+            self.get_logger().info("Moving right")
+        elif axes[3] > 0.1:
+            self.move_left()
+            self.set_propellers_spin(rate=0.8)
+            self.get_logger().info("Moving left")
+        elif axes[4] > 0.1:
+            self.move_forward()
+            self.set_propellers_spin(rate=0.8)
+            self.get_logger().info("Moving forward")
+        elif axes[4] < -0.1:
+            self.move_backward()
+            self.set_propellers_spin(rate=0.8)
+            self.get_logger().info("Moving backward")
+        elif axes[1] > 0.1:
+            self.set_sliders_max()
+            self.set_propellers_spin(rate=20)
+            self.get_logger().info("Ascending")
+        elif axes[1] < -0.1:
+            self.set_sliders_min()
+            self.set_propellers_spin(rate=20)
+            self.get_logger().info("Descending")
+        else:
             self.set_sliders_mid()
-            self.set_propellers_spin(rate=0.7)  # Maintain mid-level spin for hover
+            self.set_propellers_spin(rate=0.0)
+            self.get_logger().info("Stopped")
 
         self.publish_joint_states()
+
 
     def set_sliders_max(self):
         for joint, limits in self.joint_limits.items():
@@ -91,16 +103,24 @@ class BirotorDroneController(Node):
         self.joint_states['slider_left'] = self.joint_limits['slider_left']['upper']
 
     def set_propellers_spin(self, rate):
-        self.joint_states['top_prop_continuous'] = rate
-        self.joint_states['bottom_prop_continuous'] = rate
+        self.propeller_velocities['top_prop_continuous'] = rate
+        self.propeller_velocities['bottom_prop_continuous'] = rate
 
     def publish_joint_states(self):
         joint_state_msg = JointState()
         joint_state_msg.header.stamp = self.get_clock().now().to_msg()
-        joint_state_msg.name = list(self.joint_states.keys())
-        joint_state_msg.position = list(self.joint_states.values())
+        joint_state_msg.name = list(self.joint_states.keys()) + list(self.propeller_velocities.keys())
+
+        propeller_positions = [
+            (self.get_clock().now().nanoseconds * self.propeller_velocities['top_prop_continuous'] * 1e-9) % (2 * 3.14159),
+            (self.get_clock().now().nanoseconds * self.propeller_velocities['bottom_prop_continuous'] * 1e-9) % (2 * 3.14159),
+        ]
+
+        joint_state_msg.position = list(self.joint_states.values()) + propeller_positions
+        joint_state_msg.velocity = [0.0, 0.0, 0.0, 0.0] + list(self.propeller_velocities.values())
 
         self.joint_state_publisher.publish(joint_state_msg)
+
 
 
 def main(args=None):

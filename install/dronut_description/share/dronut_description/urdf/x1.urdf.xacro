@@ -2,7 +2,11 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dronut">
 
 <xacro:include filename="$(find dronut_description)/urdf/x1.gazebo.xacro"/>
-
+<link name="base_link">
+    <visual>
+    <origin xyz="0 0 0" rpy="0 0 ${3.141592653589793/4}"/>
+    </visual>
+</link>
 <link name="part_9">
 <visual>
 <origin xyz="7.6327832942979512154e-17 -2.7755575615628913511e-17 0.085000000000000006106" rpy="-4.3368086899420129212e-19 -2.3418766925686843389e-17 4.5622041572063771955e-17" />
@@ -25,6 +29,13 @@
 <inertia ixx="7.6423108565933732506e-05" ixy="6.9731564721227397869e-21"  ixz="5.2878801023991200047e-21" iyy="7.6423108565933637638e-05" iyz="-9.7923705599983600173e-23" izz="0.00014937358342808888887" />
 </inertial>
 </link>
+
+<joint name="base_link_part9" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="base_link" />
+    <child link="part_9" />
+    <axis xyz="0 0 1"/>
+</joint>
 
 <link name="part_14">
 <visual>

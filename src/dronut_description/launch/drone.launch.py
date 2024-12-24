@@ -26,6 +26,10 @@ def generate_launch_description():
         output='screen',
         parameters=[{'robot_description': robot_description_raw}] # add other parameters here if required
     )
+    node_joy = Node(
+        package='joy', executable='joy_node', name='joy_node'
+    )
+
 
     # joint state publisher (GUI) node
     node_joint_state_publisher = Node(
@@ -60,7 +64,8 @@ def generate_launch_description():
     # Add actions to LaunchDescription
     ld.add_action(SetParameter(name='use_sim_time', value=False))
     ld.add_action(node_robot_state_publisher)
-    ld.add_action(teleop_twist_keyboard_node)
+    ld.add_action(node_joy)
+    #ld.add_action(teleop_twist_keyboard_node)
     #ld.add_action(node_joint_state_publisher)
     ld.add_action(node_move)
     ld.add_action(node_rviz)
