@@ -22,10 +22,12 @@ BirotorDroneController::BirotorDroneController() : Node("birotor_drone_controlle
     };
 
     joint_state_publisher_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
+    joint_trajectory_publisher_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/drone_controller/joint_trajectory", 10);
+    
     cmd_vel_subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
         "cmd_vel", 10, std::bind(&BirotorDroneController::cmd_vel_callback, this, std::placeholders::_1));
 
-    RCLCPP_INFO(this->get_logger(), "Birotor Drone Controller Node Initialized");
+    //RCLCPP_INFO(this->get_logger(), "Birotor Drone Controller Node Initialized");
 }
 
 void BirotorDroneController::cmd_vel_callback(const geometry_msgs::msg::Twist::SharedPtr msg)
@@ -37,38 +39,38 @@ void BirotorDroneController::cmd_vel_callback(const geometry_msgs::msg::Twist::S
     if (x > 0.0)
     {
         move_forward();
-        RCLCPP_INFO(this->get_logger(), "Moving forward");
+        //RCLCPP_INFO(this->get_logger(), "Moving forward");
     }
     else if (x < 0.0)
     {
         move_backward();
-        RCLCPP_INFO(this->get_logger(), "Moving backward");
+        //RCLCPP_INFO(this->get_logger(), "Moving backward");
     }
 
     if (y > 0.0)
     {
         move_left();
-        RCLCPP_INFO(this->get_logger(), "Moving left");
+        //RCLCPP_INFO(this->get_logger(), "Moving left");
     }
     else if (y < 0.0)
     {
         move_right();
-        RCLCPP_INFO(this->get_logger(), "Moving right");
+        //RCLCPP_INFO(this->get_logger(), "Moving right");
     }
 
     if (z > 0.0)
     {
         z_position_ += 0.1;
         set_sliders_max();
-        set_propellers_spin(20.0);
-        RCLCPP_INFO(this->get_logger(), "Ascending");
+        set_propellers_spin(22147483647.0);
+        //RCLCPP_INFO(this->get_logger(), "Ascending");
     }
     else if (z < 0.0)
     {
         z_position_ -= 0.1;
         set_sliders_min();
-        set_propellers_spin(20.0);
-        RCLCPP_INFO(this->get_logger(), "Descending");
+        set_propellers_spin(22147483647.0);
+        //RCLCPP_INFO(this->get_logger(), "Descending");
     }
 
     if (z_position_ <= 0.0)
@@ -76,9 +78,10 @@ void BirotorDroneController::cmd_vel_callback(const geometry_msgs::msg::Twist::S
         set_sliders_mid();
         set_propellers_spin(0.0);
         z_position_ = 0.0;
-        RCLCPP_INFO(this->get_logger(), "Propellers stopped");
+        //RCLCPP_INFO(this->get_logger(), "Propellers stopped");
     }
 
+    publish_joint_trajectory();
     publish_joint_states();
 }
 
@@ -135,6 +138,40 @@ void BirotorDroneController::set_propellers_spin(double rate)
     propeller_velocities_["top_prop_continuous"] = rate;
     propeller_velocities_["bottom_prop_continuous"] = rate;
 }
+
+void BirotorDroneController::publish_joint_trajectory()
+{
+    auto joint_trajectory_msg = trajectory_msgs::msg::JointTrajectory();
+
+    // Populate joint names
+    joint_trajectory_msg.joint_names = {
+        "bottom_prop_continuous",
+        "top_prop_continuous",
+        "slider_front",
+        "slider_back",
+        "slider_left",
+        "slider_right"
+    };
+
+    // Populate trajectory points
+    trajectory_msgs::msg::JointTrajectoryPoint point;
+    point.positions = {
+        propeller_velocities_["bottom_prop_continuous"],
+        propeller_velocities_["top_prop_continuous"],
+        joint_states_["slider_front"],
+        joint_states_["slider_back"],
+        joint_states_["slider_left"],
+        joint_states_["slider_right"]
+    };
+    point.time_from_start.sec = 0;
+    point.time_from_start.nanosec = 5000;
+
+    joint_trajectory_msg.points.push_back(point);
+
+    // Publish the joint trajectory
+    joint_trajectory_publisher_->publish(joint_trajectory_msg);
+}
+
 
 void BirotorDroneController::publish_joint_states()
 {

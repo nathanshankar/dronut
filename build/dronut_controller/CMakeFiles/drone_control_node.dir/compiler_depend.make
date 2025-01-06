@@ -411,6 +411,14 @@ CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o: /home/nath
   /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h \
   /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h \
   /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h \
   /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h \
@@ -1188,11 +1196,12 @@ CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o: /home/nathan/dr
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.h \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.h \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.hpp \
   /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.h \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.h \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.h \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp \
   /opt/ros/jazzy/include/tf2/tf2/visibility_control.h \
   /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
   /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
@@ -1993,11 +2002,12 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.h \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.h \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.hpp \
   /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.h \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.h \
-  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.h \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp \
   /opt/ros/jazzy/include/tf2/tf2/visibility_control.h \
   /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
   /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
@@ -2012,6 +2022,14 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
   /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h \
   /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp \
+  /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h \
   /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h \
   /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h \
@@ -2386,7 +2404,7 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
 
-/opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.h:
+/opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp:
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/joy.hpp:
 
@@ -2406,13 +2424,13 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdalign.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -2483,6 +2501,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -2708,6 +2728,18 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/include/c++/13/chrono:
 
+/usr/include/c++/13/cassert:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/unordered_set.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/service.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
@@ -2744,8 +2776,6 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
-/usr/include/c++/13/bits/vector.tcc:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
@@ -2753,6 +2783,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
+
+/opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
@@ -2784,6 +2816,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_base.hpp:
 
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/time.h:
@@ -2812,8 +2846,6 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/visibility_control.hpp:
 
-/usr/include/c++/13/bits/utility.h:
-
 /usr/include/c++/13/cmath:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_memory_strategy.hpp:
@@ -2825,6 +2857,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
+
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
 
@@ -2849,6 +2883,10 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
+
+/usr/include/c++/13/cctype:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
@@ -2941,8 +2979,6 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_publisher.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
-
-/usr/include/c++/13/bits/unordered_set.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
 
@@ -3176,6 +3212,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/include/c++/13/cstddef:
 
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
+
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
@@ -3249,6 +3287,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joy__builder.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
+
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
@@ -3356,6 +3396,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
 /usr/include/c++/13/bits/stl_relops.h:
@@ -3368,15 +3410,11 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/include/c++/13/bits/allocator.h:
 
-/opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.h:
-
 /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
@@ -3522,6 +3560,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/include/c++/13/bits/std_function.h:
 
+/opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h:
@@ -3551,6 +3591,10 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rcutils/rcutils/types/string_map.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/uint8_array.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/c++/13/bits/stringfwd.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
 
@@ -3646,8 +3690,6 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/include/c++/13/bits/stl_pair.h:
 
-/usr/include/c++/13/bits/uses_allocator.h:
-
 /usr/include/c++/13/ext/atomicity.h:
 
 /opt/ros/jazzy/include/rmw/rmw/time.h:
@@ -3673,8 +3715,6 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_type.h:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/cassert:
 
 /home/nathan/dronut/src/dronut_controller/include/joy_to_cmd_vel_node.hpp:
 
@@ -3752,6 +3792,10 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
+
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:
+
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
@@ -3797,6 +3841,10 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 /opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp:
+
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:
+
+/opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
@@ -3972,20 +4020,8 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: /home/nathan/dronut/src/dronut
 
 /usr/include/c++/13/bits/unique_ptr.h:
 
-/opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
 
 /usr/include/c++/13/bits/unordered_map.h:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/usr/include/c++/13/cctype:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/cerrno:

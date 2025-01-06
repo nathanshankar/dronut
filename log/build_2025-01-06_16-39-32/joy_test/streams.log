@@ -1,0 +1,52 @@
+[0.382s] Invoking command in '/home/nathan/dronut/build/joy_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/home/nathan/Week-5-6-Gazebo-sensors/install/bme_gazebo_sensors_py:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/joy_test -- -j20 -l20
+[0.404s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.578s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.595s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.602s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.610s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.620s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.664s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.666s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.722s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.769s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.810s] -- Found tf2_ros: 0.36.7 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.894s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.978s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.978s] -- Configured cppcheck include dirs: 
+[0.978s] -- Configured cppcheck exclude dirs and/or files: 
+[0.978s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.978s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.978s] -- Added test 'lint_cmake' to check CMake code style
+[0.978s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.979s] -- Added test 'uncrustify' to check C / C++ code style
+[0.979s] -- Configured uncrustify additional arguments: 
+[0.979s] -- Added test 'xmllint' to check XML markup files
+[0.980s] -- Configuring done (0.6s)
+[0.993s] -- Generating done (0.0s)
+[0.999s] -- Build files have been written to: /home/nathan/dronut/build/joy_test
+[1.048s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_test_node.dir/src/joy.cpp.o[0m
+[6.875s] [100%] [32m[1mLinking CXX executable joy_test_node[0m
+[7.133s] [100%] Built target joy_test_node
+[7.144s] Invoked command in '/home/nathan/dronut/build/joy_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/home/nathan/Week-5-6-Gazebo-sensors/install/bme_gazebo_sensors_py:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/joy_test -- -j20 -l20
+[7.145s] Invoking command in '/home/nathan/dronut/build/joy_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/home/nathan/Week-5-6-Gazebo-sensors/install/bme_gazebo_sensors_py:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/dronut/build/joy_test
+[7.152s] -- Install configuration: ""
+[7.152s] -- Installing: /home/nathan/dronut/install/joy_test/lib/joy_test/joy_test_node
+[7.156s] -- Set non-toolchain portion of runtime path of "/home/nathan/dronut/install/joy_test/lib/joy_test/joy_test_node" to ""
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test//launch
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test//launch/drone.launch.py
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/ament_index/resource_index/package_run_dependencies/joy_test
+[7.156s] -- Installing: /home/nathan/dronut/install/joy_test/share/ament_index/resource_index/parent_prefix_path/joy_test
+[7.156s] -- Installing: /home/nathan/dronut/install/joy_test/share/joy_test/environment/ament_prefix_path.sh
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/environment/ament_prefix_path.dsv
+[7.156s] -- Installing: /home/nathan/dronut/install/joy_test/share/joy_test/environment/path.sh
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/environment/path.dsv
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/local_setup.bash
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/local_setup.sh
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/local_setup.zsh
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/local_setup.dsv
+[7.156s] -- Installing: /home/nathan/dronut/install/joy_test/share/joy_test/package.dsv
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/ament_index/resource_index/packages/joy_test
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/cmake/joy_testConfig.cmake
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/cmake/joy_testConfig-version.cmake
+[7.156s] -- Up-to-date: /home/nathan/dronut/install/joy_test/share/joy_test/package.xml
+[7.157s] Invoked command in '/home/nathan/dronut/build/joy_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/home/nathan/Week-5-6-Gazebo-sensors/install/bme_gazebo_sensors_py:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/dronut/build/joy_test

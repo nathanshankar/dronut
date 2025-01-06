@@ -722,16 +722,25 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.h \
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.h \
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.h \
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp \
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp \
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp \
  /usr/include/c++/13/math.h /usr/include/c++/13/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.h \
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp \
  /opt/ros/jazzy/include/tf2/tf2/visibility_control.h \
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.h \
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.hpp \
  /home/nathan/dronut/src/dronut_controller/include/birotor_drone_controller.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp \
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

@@ -67,7 +67,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dronut_controller/" TYPE DIRECTORY FILES "/home/nathan/dronut/src/dronut_controller/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dronut_controller/" TYPE DIRECTORY FILES
+    "/home/nathan/dronut/src/dronut_controller/worlds"
+    "/home/nathan/dronut/src/dronut_controller/launch"
+    "/home/nathan/dronut/src/dronut_controller/config"
+    )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

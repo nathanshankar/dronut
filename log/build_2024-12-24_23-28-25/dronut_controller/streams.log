@@ -1,0 +1,33 @@
+[0.019s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[0.066s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.401s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.443s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.455s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.469s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.485s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.565s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.567s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.663s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.751s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.825s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[0.830s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.989s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.990s]   By not providing "Findgazebo.cmake" in CMAKE_MODULE_PATH this project has
+[0.990s]   asked CMake to find a package configuration file provided by "gazebo", but
+[0.990s]   CMake did not find one.
+[0.990s] 
+[0.990s]   Could not find a package configuration file provided by "gazebo" with any
+[0.990s]   of the following names:
+[0.990s] 
+[0.990s]     gazeboConfig.cmake
+[0.990s]     gazebo-config.cmake
+[0.990s] 
+[0.990s]   Add the installation prefix of "gazebo" to CMAKE_PREFIX_PATH or set
+[0.990s]   "gazebo_DIR" to a directory containing one of the above files.  If "gazebo"
+[0.990s]   provides a separate development package or SDK, be sure it has been
+[0.990s]   installed.
+[0.990s] 
+[0.990s] [0m
+[0.991s] -- Configuring incomplete, errors occurred!
+[0.999s] gmake: *** [Makefile:321: cmake_check_build_system] Error 1
+[1.003s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20

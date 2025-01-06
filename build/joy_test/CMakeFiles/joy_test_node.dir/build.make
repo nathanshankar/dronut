@@ -194,7 +194,7 @@ joy_test_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fast
 joy_test_node: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so
 joy_test_node: /opt/ros/jazzy/lib/librmw.so
 joy_test_node: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
-joy_test_node: /opt/ros/jazzy/lib/libfastcdr.so.2.2.4
+joy_test_node: /opt/ros/jazzy/lib/libfastcdr.so.2.2.5
 joy_test_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 joy_test_node: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 joy_test_node: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so

@@ -412,6 +412,14 @@ CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o
  /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h
  /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp
  /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h
@@ -1190,11 +1198,12 @@ CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o
  /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.h
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.h
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.hpp
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.h
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.h
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.h
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp
  /opt/ros/jazzy/include/tf2/tf2/visibility_control.h
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp
@@ -1996,11 +2005,12 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o
  /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.h
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.h
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/MinMax.hpp
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/QuadWord.hpp
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.h
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.h
- /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.h
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Quaternion.hpp
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Scalar.hpp
+ /opt/ros/jazzy/include/tf2/tf2/LinearMath/Vector3.hpp
  /opt/ros/jazzy/include/tf2/tf2/visibility_control.h
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp
@@ -2015,6 +2025,14 @@ CMakeFiles/drone_control_node.dir/src/main.cpp.o
  /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h
  /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp
  /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp
+ /opt/ros/jazzy/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h

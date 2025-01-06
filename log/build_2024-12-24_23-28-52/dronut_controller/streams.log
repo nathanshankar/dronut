@@ -1,0 +1,32 @@
+[0.017s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[0.060s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.415s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.457s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.468s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.483s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.500s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.580s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.582s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.681s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.773s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.848s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[0.853s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.014s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[1.014s]   By not providing "Findgz.cmake" in CMAKE_MODULE_PATH this project has asked
+[1.014s]   CMake to find a package configuration file provided by "gz", but CMake did
+[1.014s]   not find one.
+[1.014s] 
+[1.015s]   Could not find a package configuration file provided by "gz" with any of
+[1.015s]   the following names:
+[1.015s] 
+[1.015s]     gzConfig.cmake
+[1.015s]     gz-config.cmake
+[1.015s] 
+[1.015s]   Add the installation prefix of "gz" to CMAKE_PREFIX_PATH or set "gz_DIR" to
+[1.015s]   a directory containing one of the above files.  If "gz" provides a separate
+[1.015s]   development package or SDK, be sure it has been installed.
+[1.015s] 
+[1.015s] [0m
+[1.015s] -- Configuring incomplete, errors occurred!
+[1.025s] gmake: *** [Makefile:321: cmake_check_build_system] Error 1
+[1.028s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20

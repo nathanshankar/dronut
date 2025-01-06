@@ -2,11 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dronut">
 
 <xacro:include filename="$(find realsense_cam)/urdf/test_d455_camera.urdf.xacro"/>
-<link name="base_link">
-    <visual>
-    <origin xyz="0 0 0" rpy="0 0 ${3.141592653589793/4}"/>
-    </visual>
-</link>
+
 <link name="part_9">
 <visual>
 <origin xyz="7.6327832942979512154e-17 -2.7755575615628913511e-17 0.085000000000000006106" rpy="-4.3368086899420129212e-19 -2.3418766925686843389e-17 4.5622041572063771955e-17" />
@@ -29,13 +25,6 @@
 <inertia ixx="7.6423108565933732506e-05" ixy="6.9731564721227397869e-21"  ixz="5.2878801023991200047e-21" iyy="7.6423108565933637638e-05" iyz="-9.7923705599983600173e-23" izz="0.00014937358342808888887" />
 </inertial>
 </link>
-
-<joint name="base_link_part9" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="part_9" />
-    <axis xyz="0 0 1"/>
-</joint>
 
 <link name="part_14">
 <visual>
@@ -619,13 +608,92 @@
     <child link="base_screw" />
     <axis xyz="0 0 1"/>
 </joint>
+<gazebo>
+ <sensor name="dronut_cam" type="camera">
+        <pose>0.01233 -0.03 .01878 0 0 0</pose>
+        <camera>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+          <distortion>
+            <k1>1.578758331993112829e-01</k1>
+            <k2>-5.784303605943902360e-01</k2>
+            <k3>-8.740723680089258069e-03</k3>
+            <p1>1.359451618091441112e-03</p1>
+            <p2>1.640043376158566713e-01</p2>
+            <center>0.5 0.5</center>
+          </distortion>
+          <lens>
+            <type>pinhole</type>
+            <scale_to_hfov>false</scale_to_hfov>
+            <intrinsics>
+              <fx>4.970870507466349295e+02</fx>
+              <fy>4.976011127668800782e+02</fy>
+              <cx>3.168387473166100108e+02</cx>
+              <cy>2.342740555042151982e+02</cy>
+              <s>0.0</s>
+            </intrinsics>
+          </lens>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+        <topic>camera</topic>
+      </sensor>
+</gazebo>
+<ros2_control name="dronut" type="system">
+    <hardware>
+        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+    <joint name="bottom_prop_continuous">
+        <command_interface name="position"/>
+        <state_interface name="position"/>
+    </joint>
+    <joint name="top_prop_continuous">
+        <command_interface name="position"/>
+        <state_interface name="position"/>
+    </joint>
+    <joint name="slider_front">
+        <command_interface name="position">
+            <param name="min">0.015</param>
+            <param name="max">0.041</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
+    <joint name="slider_back">
+        <command_interface name="position">
+            <param name="min">-0.019</param>
+            <param name="max">0.008</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
+    <joint name="slider_left">
+        <command_interface name="position">
+            <param name="min">0.015</param>
+            <param name="max">0.041</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
+    <joint name="slider_right">
+        <command_interface name="position">
+            <param name="min">-0.018</param>
+            <param name="max">0.009</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
+</ros2_control>
 
 <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        <robotNamespace>/dronut</robotNamespace>
-        <tf_topic>/model/dronut/tf</tf_topic>
+    <plugin filename="libgz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>$(find dronut_controller)/config/dronut_controllers.yaml</parameters>
+            <ros>
+                <remapping>/controller_manager/robot_description:=/robot_description</remapping>
+            </ros>
     </plugin>
-    <plugin name="gazebo_ros" filename="libgazebo_ros_api_plugin.so"/>
 </gazebo>
-
 </robot>

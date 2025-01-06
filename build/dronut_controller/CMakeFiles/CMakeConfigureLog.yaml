@@ -527,3 +527,51 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/ros/jazzy/share/realtime_tools/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/realtime_tools/cmake/realtime_toolsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/joint_limits/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/joint_limits/cmake/joint_limitsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/hardware_interface/cmake/hardware_interfaceConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/controller_interface/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/controller_interface/cmake/controller_interfaceConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/controller_manager/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/controller_manager/cmake/controller_managerConfig.cmake:41 (include)"
+      - "CMakeLists.txt:15 (find_package)"
+    directories:
+      source: "/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO"
+      binary: "/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/jazzy/share/tinyxml2_vendor/cmake/Modules;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0a96/fast
+        gmake[1]: Entering directory '/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f0a96.dir/build.make CMakeFiles/cmTC_f0a96.dir/build
+        gmake[2]: Entering directory '/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO'
+        Building C object CMakeFiles/cmTC_f0a96.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f0a96.dir/src.c.o -c /home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO/src.c
+        Linking C executable cmTC_f0a96
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0a96.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f0a96.dir/src.c.o -o cmTC_f0a96 
+        gmake[2]: Leaving directory '/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO'
+        gmake[1]: Leaving directory '/home/nathan/dronut/build/dronut_controller/CMakeFiles/CMakeScratch/TryCompile-CnETkO'
+        
+      exitCode: 0
+...

@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/drone_control_node.dir/src/main.cpp.o: in function `void std::_Construct<BirotorDroneController>(BirotorDroneController*)':
+main.cpp:(.text._ZSt10_ConstructI22BirotorDroneControllerJEEvPT_DpOT0_[_ZSt10_ConstructI22BirotorDroneControllerJEEvPT_DpOT0_]+0x35): undefined reference to `BirotorDroneController::BirotorDroneController()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/drone_control_node.dir/build.make:256: drone_control_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_control_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

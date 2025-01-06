@@ -16,6 +16,7 @@ public:
     
 private:
     void joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg);
+    void reset_to_world_frame();
     void broadcast_transform();
 
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr joy_subscription_;
@@ -31,6 +32,7 @@ private:
     double current_linear_velocity_y_{0.0};
     double current_linear_velocity_z_{0.0};
     double current_angular_velocity_z_{0.0};
+    geometry_msgs::msg::TransformStamped last_transform_;
     const double max_velocity_;
 };
 

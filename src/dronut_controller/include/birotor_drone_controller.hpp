@@ -4,6 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include <geometry_msgs/msg/twist.hpp>
+#include <trajectory_msgs/msg/joint_trajectory.hpp>
 #include <cmath>
 #include <map>
 
@@ -22,6 +23,7 @@ private:
     void move_left();
     void move_right();
     void set_propellers_spin(double rate);
+    void publish_joint_trajectory();
     void publish_joint_states();
 
     struct JointLimit
@@ -34,7 +36,7 @@ private:
     std::map<std::string, JointLimit> joint_limits_;
     std::map<std::string, double> joint_states_;
     std::map<std::string, double> propeller_velocities_;
-
+    rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr joint_trajectory_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_state_publisher_;
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_subscription_;
 };

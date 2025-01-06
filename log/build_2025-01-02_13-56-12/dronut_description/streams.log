@@ -1,0 +1,51 @@
+[0.591s] Invoking command in '/home/nathan/dronut/src/dronut_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/dronut_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dronut_description build --build-base /home/nathan/dronut/build/dronut_description/build install --record /home/nathan/dronut/build/dronut_description/install.log --single-version-externally-managed install_data
+[0.711s] /home/nathan/.local/lib/python3.12/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.711s]   warnings.warn(msg)
+[0.803s] running egg_info
+[0.819s] writing ../../build/dronut_description/dronut_description.egg-info/PKG-INFO
+[0.819s] writing dependency_links to ../../build/dronut_description/dronut_description.egg-info/dependency_links.txt
+[0.819s] writing entry points to ../../build/dronut_description/dronut_description.egg-info/entry_points.txt
+[0.819s] writing requirements to ../../build/dronut_description/dronut_description.egg-info/requires.txt
+[0.819s] writing top-level names to ../../build/dronut_description/dronut_description.egg-info/top_level.txt
+[0.853s] reading manifest file '../../build/dronut_description/dronut_description.egg-info/SOURCES.txt'
+[0.854s] writing manifest file '../../build/dronut_description/dronut_description.egg-info/SOURCES.txt'
+[0.855s] running build
+[0.855s] running build_py
+[0.855s] copying dronut_description/move.py -> /home/nathan/dronut/build/dronut_description/build/lib/dronut_description
+[0.855s] copying dronut_description/__init__.py -> /home/nathan/dronut/build/dronut_description/build/lib/dronut_description
+[0.855s] running install
+[0.859s] running install_lib
+[0.875s] running install_data
+[0.875s] copying resource/dronut_description -> /home/nathan/dronut/install/dronut_description/share/ament_index/resource_index/packages
+[0.875s] copying package.xml -> /home/nathan/dronut/install/dronut_description/share/dronut_description
+[0.875s] copying launch/drone.launch.py -> /home/nathan/dronut/install/dronut_description/share/dronut_description/launch
+[0.875s] copying launch/drone_sim.launch.py -> /home/nathan/dronut/install/dronut_description/share/dronut_description/launch
+[0.875s] copying meshes/part_19.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.876s] copying meshes/part_12.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.876s] copying meshes/part_13.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.877s] copying meshes/part_18.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.878s] copying meshes/part_10.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.878s] copying meshes/part_11.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.878s] copying meshes/part_7.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.879s] copying meshes/part_5.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.879s] copying meshes/part_14.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.879s] copying meshes/part_8.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.879s] copying meshes/part_16.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.880s] copying meshes/part_1.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.880s] copying meshes/part_17.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.880s] copying meshes/part_15.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.880s] copying meshes/part_3.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.880s] copying meshes/part_9.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.881s] copying meshes/part_6.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.881s] copying meshes/part_4.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.881s] copying meshes/part_2.stl -> /home/nathan/dronut/install/dronut_description/share/dronut_description/meshes
+[0.881s] copying urdf/x1.urdf.xacro -> /home/nathan/dronut/install/dronut_description/share/dronut_description/urdf
+[0.881s] copying urdf/x1.gazebo.xacro -> /home/nathan/dronut/install/dronut_description/share/dronut_description/urdf
+[0.882s] copying rviz/x1_view.rviz -> /home/nathan/dronut/install/dronut_description/share/dronut_description/rviz
+[0.882s] running install_egg_info
+[0.898s] removing '/home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages/dronut_description-0.0.0-py3.12.egg-info' (and everything under it)
+[0.898s] Copying ../../build/dronut_description/dronut_description.egg-info to /home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages/dronut_description-0.0.0-py3.12.egg-info
+[0.899s] running install_scripts
+[0.985s] Installing move script to /home/nathan/dronut/install/dronut_description/lib/dronut_description
+[0.985s] writing list of installed files to '/home/nathan/dronut/build/dronut_description/install.log'
+[1.002s] Invoked command in '/home/nathan/dronut/src/dronut_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/dronut_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/dronut_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dronut_description build --build-base /home/nathan/dronut/build/dronut_description/build install --record /home/nathan/dronut/build/dronut_description/install.log --single-version-externally-managed install_data

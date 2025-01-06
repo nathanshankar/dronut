@@ -11,7 +11,7 @@ def generate_launch_description():
     ld = LaunchDescription()
     pkg_name = 'dronut_w_cam'
     file_subpath = 'urdf/x1.urdf.xacro'
-
+    sdf_path = os.path.join(get_package_share_directory('dronut_controller'), 'worlds', 'trial.sdf')
 
     # Use xacro to process the file
     xacro_file = os.path.join(get_package_share_directory(pkg_name),file_subpath)
@@ -20,9 +20,10 @@ def generate_launch_description():
     gz_start_world = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([get_package_share_directory('ros_gz_sim'), '/launch', '/gz_sim.launch.py']),
         launch_arguments={
-            'gz_args' : '-r ' + 'empty.sdf'
+            'gz_args' : '-r ' + sdf_path,
             }.items(),
     )
+  
 
     node_spawn_entity = Node(package='ros_gz_sim', executable='create',
                         arguments=['-topic', '/robot_description',
@@ -56,32 +57,38 @@ def generate_launch_description():
         arguments=['-d' + os.path.join(get_package_share_directory(pkg_name), 'rviz', 'x1_view.rviz')]
     )
 
+    node_controller_manager = Node(
+        package='controller_manager',
+        executable='spawner',
+        name='controller_manager',
+        arguments=['drone_controller', 'joint_state_broadcaster'],
+        output='screen',
+        parameters=[{'use_sim_time': False}]
+    )
+
     node_ros_gz_bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=  [
-                    # ROS -> Ignition Gazebo bridge
                     '/clock'                           + '@rosgraph_msgs/msg/Clock'   + '[' + 'ignition.msgs.Clock',
-                    '/model/dronut/tf'       + '@tf2_msgs/msg/TFMessage' + '[' + 'ignition.msgs.Pose_V',
+                    '/world/empty/model/dronut/joint_state' + '@sensor_msgs/msg/JointState' + '[' + 'ignition.msgs.Model',
                     ],
-        parameters= [{'qos_overrides./leo_v1.subscriber.reliability': 'reliable'},{'qos_overrides./leo_v1.subscriber.durability': 'transient_local'}],
+        parameters= [{'qos_overrides./dronut_controller.subscriber.reliability': 'reliable'},{'qos_overrides./dronut_controller.subscriber.durability': 'transient_local'}],
         remappings= [
-                    # Remap Ignition Gazebo tf topic to ROS tf topic
-                    ('/model/dronut/tf',       '/tf'     ),
-                    # If required, add reverse remapping for other topics here
+                    ('/world/empty/model/dronut/joint_state', 'joint_states'),
                     ],
         output='screen'
     )
-
-
 
     # Add actions to LaunchDescription
     ld.add_action(SetParameter(name='use_sim_time', value=False))
     ld.add_action(gz_start_world)
     ld.add_action(node_spawn_entity)
-
+    ld.add_action(node_ros_gz_bridge)
     ld.add_action(node_robot_state_publisher)
     ld.add_action(node_joy)
+    ld.add_action(node_controller_manager)
     ld.add_action(node_move)
     ld.add_action(node_rviz)
+    # ld.add_action(control_node)
     return ld

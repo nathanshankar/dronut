@@ -11,12 +11,16 @@ find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(control_msgs REQUIRED)
+find_package(ros_gz_interfaces REQUIRED)
+find_package(trajectory_msgs REQUIRED)
 
 # Include directories
 include_directories(include)
 
 # Add the executable
 add_executable(drone_control_node
+    # src/trial_code.cpp
     src/main.cpp
     src/birotor_drone_controller.cpp
     src/joy_to_cmd_vel_node.cpp
@@ -29,6 +33,10 @@ ament_target_dependencies(drone_control_node
     geometry_msgs
     tf2
     tf2_ros
+    control_msgs
+    ros_gz_interfaces
+    trajectory_msgs
+    fastcdr
 )
 target_include_directories(drone_control_node PRIVATE include)
 
@@ -38,7 +46,9 @@ install(TARGETS drone_control_node
 )
 
 install(DIRECTORY
+    worlds
     launch
+    config
     DESTINATION share/${PROJECT_NAME}/
 )
 

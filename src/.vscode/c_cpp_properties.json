@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${vcpkgRoot}/x64-linux/include",
-                "/opt/ros/jazzy/include/**"
+                "/opt/ros/jazzy/include/**",
+                "/opt/ros/jazzy/opt/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

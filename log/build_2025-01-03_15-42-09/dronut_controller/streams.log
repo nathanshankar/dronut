@@ -1,0 +1,34 @@
+[0.019s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[0.076s] [ 25%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o[0m
+[5.649s] [ 50%] [32m[1mLinking CXX executable drone_control_node[0m
+[6.010s] [100%] Built target drone_control_node
+[6.021s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[6.034s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/dronut/build/dronut_controller
+[6.043s] -- Install configuration: ""
+[6.043s] -- Installing: /home/nathan/dronut/install/dronut_controller/lib/dronut_controller/drone_control_node
+[6.049s] -- Set non-toolchain portion of runtime path of "/home/nathan/dronut/install/dronut_controller/lib/dronut_controller/drone_control_node" to ""
+[6.049s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds
+[6.049s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/maze1.sdf
+[6.049s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/sample.wbt
+[6.049s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/.sample.jpg
+[6.049s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/trial.sdf
+[6.049s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//launch
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//launch/drone.launch.py
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//config
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//config/dronut_controllers.yaml
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/ament_index/resource_index/package_run_dependencies/dronut_controller
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/ament_index/resource_index/parent_prefix_path/dronut_controller
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/ament_prefix_path.sh
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/ament_prefix_path.dsv
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/path.sh
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/path.dsv
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.bash
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.sh
+[6.050s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.zsh
+[6.051s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.dsv
+[6.051s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/package.dsv
+[6.051s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/ament_index/resource_index/packages/dronut_controller
+[6.051s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/cmake/dronut_controllerConfig.cmake
+[6.051s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/cmake/dronut_controllerConfig-version.cmake
+[6.051s] -- Up-to-date: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/package.xml
+[6.051s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/dronut/build/dronut_controller
