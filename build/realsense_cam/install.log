@@ -10,7 +10,7 @@
 /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf/test_d455_camera.urdf.xacro
 /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf/d455.urdf.xacro
 /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf/usb_plug.urdf.xacro
-/home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf
+/home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf/d455.gazebo.xacro
 /home/nathan/dronut/install/realsense_cam/share/realsense_cam/rviz/camera_view.rviz
 /home/nathan/dronut/install/realsense_cam/share/realsense_cam/worlds
 /home/nathan/dronut/install/realsense_cam/lib/python3.12/site-packages/realsense_cam-0.0.0-py3.12.egg-info/dependency_links.txt

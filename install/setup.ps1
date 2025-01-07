@@ -23,7 +23,6 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/jazzy\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/nathan/Week-5-6-Gazebo-sensors/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nathan/leo-rover-autonomous-exploration/install\local_setup.ps1"
 
 # source this prefix

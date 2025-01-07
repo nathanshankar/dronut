@@ -3,6 +3,9 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node, SetParameter
 import xacro
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+
 
 
 def generate_launch_description():
@@ -12,6 +15,19 @@ def generate_launch_description():
     # Specify the name of the package and path to xacro file within the package
     pkg_name = 'realsense_cam'
     file_subpath = 'urdf/test_d455_camera.urdf.xacro'
+    
+    gz_start_world = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([get_package_share_directory('ros_gz_sim'), '/launch', '/gz_sim.launch.py']),
+        launch_arguments={
+            'gz_args' : '-r ' + 'empty.sdf'
+            }.items(),
+    )
+
+    # Add features
+    node_spawn_entity = Node(package='ros_gz_sim', executable='create',
+                        arguments=['-topic', '/robot_description',
+                                   '-z', '0.5'],
+                        output='screen')
 
 
     # Use xacro to process the file
@@ -45,6 +61,8 @@ def generate_launch_description():
 
     # Add actions to LaunchDescription
     ld.add_action(SetParameter(name='use_sim_time', value=False))
+    ld.add_action(gz_start_world)
+    ld.add_action(node_spawn_entity)
     ld.add_action(node_robot_state_publisher)
     #ld.add_action(node_joint_state_publisher)
     ld.add_action(node_rviz)
