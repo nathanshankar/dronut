@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o"
   "CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o.d"
+  "CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o"
+  "CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o.d"
   "CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o"
   "CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o.d"
   "CMakeFiles/drone_control_node.dir/src/main.cpp.o"

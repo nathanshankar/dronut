@@ -49,6 +49,7 @@ def generate_launch_description():
         executable='joint_state_publisher_gui',
         name='joint_state_publisher_gui',
     )
+    
 
     # Rviz node
     node_rviz = Node(
@@ -61,8 +62,8 @@ def generate_launch_description():
 
     # Add actions to LaunchDescription
     ld.add_action(SetParameter(name='use_sim_time', value=False))
-    ld.add_action(gz_start_world)
-    ld.add_action(node_spawn_entity)
+    #ld.add_action(gz_start_world)
+    #ld.add_action(node_spawn_entity)
     ld.add_action(node_robot_state_publisher)
     #ld.add_action(node_joint_state_publisher)
     ld.add_action(node_rviz)

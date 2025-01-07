@@ -72,10 +72,22 @@ def generate_launch_description():
         arguments=  [
                     '/clock'                           + '@rosgraph_msgs/msg/Clock'   + '[' + 'ignition.msgs.Clock',
                     '/world/empty/model/dronut/joint_state' + '@sensor_msgs/msg/JointState' + '[' + 'ignition.msgs.Model',
+                    '/camera_info1'                         + '@sensor_msgs/msg/CameraInfo' + '[' + 'ignition.msgs.CameraInfo',
+                    '/ircam1'                               + '@sensor_msgs/msg/Image'      + '[' + 'ignition.msgs.Image',
+                    '/ircam1/points'                    + '@sensor_msgs/msg/PointCloud2' + '[' + 'ignition.msgs.PointCloudPacked',
+                    # '/camera_info2'                         + '@sensor_msgs/msg/CameraInfo' + '[' + 'ignition.msgs.CameraInfo',
+                    # '/ircam2'                               + '@sensor_msgs/msg/Image'      + '[' + 'ignition.msgs.Image',
+                    # '/ircam2/points'                    + '@sensor_msgs/msg/PointCloud2' + '[' + 'ignition.msgs.PointCloudPacked',
                     ],
         parameters= [{'qos_overrides./dronut_controller.subscriber.reliability': 'reliable'},{'qos_overrides./dronut_controller.subscriber.durability': 'transient_local'}],
         remappings= [
                     ('/world/empty/model/dronut/joint_state', 'joint_states'),
+                    ('/camera_info1', '/ircam1/camera_info'),
+                    ('/ircam1', '/ircam1/image_raw'),
+                    ('/ircam1/points', '/ircam1/points'),
+                    # ('/camera_info2', '/ircam2/camera_info'),
+                    # ('/ircam2', '/ircam2/image_raw'),
+                    # ('/ircam2/points', '/ircam2/points'),
                     ],
         output='screen'
     )

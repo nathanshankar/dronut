@@ -234,6 +234,30 @@ src/birotor_drone_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_control_node.dir/build.make CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.s
 .PHONY : src/birotor_drone_controller.cpp.s
 
+src/frame_remapper.o: src/frame_remapper.cpp.o
+.PHONY : src/frame_remapper.o
+
+# target to build an object file
+src/frame_remapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_control_node.dir/build.make CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o
+.PHONY : src/frame_remapper.cpp.o
+
+src/frame_remapper.i: src/frame_remapper.cpp.i
+.PHONY : src/frame_remapper.i
+
+# target to preprocess a source file
+src/frame_remapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_control_node.dir/build.make CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.i
+.PHONY : src/frame_remapper.cpp.i
+
+src/frame_remapper.s: src/frame_remapper.cpp.s
+.PHONY : src/frame_remapper.s
+
+# target to generate assembly for a file
+src/frame_remapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_control_node.dir/build.make CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.s
+.PHONY : src/frame_remapper.cpp.s
+
 src/joy_to_cmd_vel_node.o: src/joy_to_cmd_vel_node.cpp.o
 .PHONY : src/joy_to_cmd_vel_node.o
 
@@ -301,6 +325,9 @@ help:
 	@echo "... src/birotor_drone_controller.o"
 	@echo "... src/birotor_drone_controller.i"
 	@echo "... src/birotor_drone_controller.s"
+	@echo "... src/frame_remapper.o"
+	@echo "... src/frame_remapper.i"
+	@echo "... src/frame_remapper.s"
 	@echo "... src/joy_to_cmd_vel_node.o"
 	@echo "... src/joy_to_cmd_vel_node.i"
 	@echo "... src/joy_to_cmd_vel_node.s"

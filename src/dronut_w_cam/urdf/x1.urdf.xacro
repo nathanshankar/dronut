@@ -609,27 +609,14 @@
     <axis xyz="0 0 1"/>
 </joint>
 
-<gazebo reference="camera_link">
-    <sensor name="rgbd_camera" type="rgbd_camera">
-      <camera>
-        <horizontal_fov>1.25</horizontal_fov>
-        <image>
-          <width>320</width>
-          <height>240</height>
-        </image>
-        <clip>
-          <near>0.3</near>
-          <far>15</far>
-        </clip>
-            <optical_frame_id>camera_infra1_optical_frame</optical_frame_id>
-      </camera>
-      <always_on>1</always_on>
-      <update_rate>20</update_rate>
-      <visualize>true</visualize>
-      <topic>camera</topic>
-      <gz_frame_id>camera_link</gz_frame_id>
-    </sensor>
-  </gazebo>
+<gazebo>
+    <plugin filename="libgz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>$(find dronut_controller)/config/dronut_controllers.yaml</parameters>
+            <ros>
+                <remapping>/controller_manager/robot_description:=/robot_description</remapping>
+            </ros>
+    </plugin>
+</gazebo>
 
 <ros2_control name="dronut" type="system">
     <hardware>
@@ -673,12 +660,51 @@
     </joint>
 </ros2_control>
 
-<gazebo>
-    <plugin filename="libgz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-        <parameters>$(find dronut_controller)/config/dronut_controllers.yaml</parameters>
-            <ros>
-                <remapping>/controller_manager/robot_description:=/robot_description</remapping>
-            </ros>
-    </plugin>
+<gazebo reference="camera_infra1_optical_frame">
+  <sensor name="depth_camera1" type="depth">
+    <update_rate>10</update_rate>
+    <topic>ircam1</topic>
+    <camera_info_topic>camera_info1</camera_info_topic> 
+    <camera>
+      <horizontal_fov>1.05</horizontal_fov>
+      <image>
+        <width>256</width>
+        <height>256</height>
+        <format>R_FLOAT32</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <always_on>true</always_on>
+    <visualize>true</visualize>
+  </sensor>
 </gazebo>
+
+<gazebo reference="camera_infra2_optical_frame">
+  <sensor name="depth_camera2" type="depth">
+    <update_rate>10</update_rate>
+    <topic>ircam2</topic>
+    <camera_info_topic>camera_info2</camera_info_topic> 
+    <always_publish_tf>false</always_publish_tf>
+    <camera>
+      <horizontal_fov>1.05</horizontal_fov>
+      <image>
+        <width>256</width>
+        <height>256</height>
+        <format>R_FLOAT32</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <always_on>true</always_on>
+    <visualize>true</visualize>
+  </sensor>
+</gazebo>
+
+
+
 </robot>

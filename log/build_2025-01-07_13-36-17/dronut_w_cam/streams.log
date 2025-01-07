@@ -1,0 +1,49 @@
+[0.771s] Invoking command in '/home/nathan/dronut/src/dronut_w_cam': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/dronut_w_cam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/dronut_w_cam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dronut_w_cam build --build-base /home/nathan/dronut/build/dronut_w_cam/build install --record /home/nathan/dronut/build/dronut_w_cam/install.log --single-version-externally-managed install_data
+[0.890s] /home/nathan/.local/lib/python3.12/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.890s]   warnings.warn(msg)
+[0.983s] running egg_info
+[0.998s] writing ../../build/dronut_w_cam/dronut_w_cam.egg-info/PKG-INFO
+[0.998s] writing dependency_links to ../../build/dronut_w_cam/dronut_w_cam.egg-info/dependency_links.txt
+[0.998s] writing entry points to ../../build/dronut_w_cam/dronut_w_cam.egg-info/entry_points.txt
+[0.998s] writing requirements to ../../build/dronut_w_cam/dronut_w_cam.egg-info/requires.txt
+[0.998s] writing top-level names to ../../build/dronut_w_cam/dronut_w_cam.egg-info/top_level.txt
+[1.031s] reading manifest file '../../build/dronut_w_cam/dronut_w_cam.egg-info/SOURCES.txt'
+[1.032s] writing manifest file '../../build/dronut_w_cam/dronut_w_cam.egg-info/SOURCES.txt'
+[1.032s] running build
+[1.032s] running build_py
+[1.032s] copying dronut_w_cam/move.py -> /home/nathan/dronut/build/dronut_w_cam/build/lib/dronut_w_cam
+[1.032s] copying dronut_w_cam/__init__.py -> /home/nathan/dronut/build/dronut_w_cam/build/lib/dronut_w_cam
+[1.032s] running install
+[1.036s] running install_lib
+[1.052s] running install_data
+[1.052s] copying resource/dronut_w_cam -> /home/nathan/dronut/install/dronut_w_cam/share/ament_index/resource_index/packages
+[1.052s] copying package.xml -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam
+[1.052s] copying launch/drone.launch.py -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/launch
+[1.052s] copying launch/drone_sim.launch.py -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/launch
+[1.052s] copying meshes/part_19.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.052s] copying meshes/part_12.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.052s] copying meshes/part_13.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_18.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_10.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_11.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_7.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_5.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_14.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_8.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_16.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.053s] copying meshes/part_1.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_17.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_15.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_3.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_9.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_6.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_4.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying meshes/part_2.stl -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/meshes
+[1.054s] copying urdf/x1.urdf.xacro -> /home/nathan/dronut/install/dronut_w_cam/share/dronut_w_cam/urdf
+[1.054s] running install_egg_info
+[1.070s] removing '/home/nathan/dronut/install/dronut_w_cam/lib/python3.12/site-packages/dronut_w_cam-0.0.0-py3.12.egg-info' (and everything under it)
+[1.070s] Copying ../../build/dronut_w_cam/dronut_w_cam.egg-info to /home/nathan/dronut/install/dronut_w_cam/lib/python3.12/site-packages/dronut_w_cam-0.0.0-py3.12.egg-info
+[1.070s] running install_scripts
+[1.158s] Installing move script to /home/nathan/dronut/install/dronut_w_cam/lib/dronut_w_cam
+[1.158s] writing list of installed files to '/home/nathan/dronut/build/dronut_w_cam/install.log'
+[1.177s] Invoked command in '/home/nathan/dronut/src/dronut_w_cam' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/dronut_w_cam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/dronut_w_cam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dronut_w_cam build --build-base /home/nathan/dronut/build/dronut_w_cam/build install --record /home/nathan/dronut/build/dronut_w_cam/install.log --single-version-externally-managed install_data

@@ -20,7 +20,7 @@ def generate_launch_description():
     gz_start_world = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([get_package_share_directory('ros_gz_sim'), '/launch', '/gz_sim.launch.py']),
         launch_arguments={
-            'gz_args' : '-r ' + 'empty.sdf',
+            'gz_args' : '-r ' + sdf_path,
             }.items(),
     )
   
@@ -72,16 +72,22 @@ def generate_launch_description():
         arguments=  [
                     '/clock'                           + '@rosgraph_msgs/msg/Clock'   + '[' + 'ignition.msgs.Clock',
                     '/world/empty/model/dronut/joint_state' + '@sensor_msgs/msg/JointState' + '[' + 'ignition.msgs.Model',
-                    "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",
-                    "/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
-                    "/camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
-                    "/camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
-
+                    '/camera_info1'                         + '@sensor_msgs/msg/CameraInfo' + '[' + 'ignition.msgs.CameraInfo',
+                    '/ircam1'                               + '@sensor_msgs/msg/Image'      + '[' + 'ignition.msgs.Image',
+                    '/ircam1/points'                    + '@sensor_msgs/msg/PointCloud2' + '[' + 'ignition.msgs.PointCloudPacked',
+                    # '/camera_info2'                         + '@sensor_msgs/msg/CameraInfo' + '[' + 'ignition.msgs.CameraInfo',
+                    # '/ircam2'                               + '@sensor_msgs/msg/Image'      + '[' + 'ignition.msgs.Image',
+                    # '/ircam2/points'                    + '@sensor_msgs/msg/PointCloud2' + '[' + 'ignition.msgs.PointCloudPacked',
                     ],
         parameters= [{'qos_overrides./dronut_controller.subscriber.reliability': 'reliable'},{'qos_overrides./dronut_controller.subscriber.durability': 'transient_local'}],
         remappings= [
                     ('/world/empty/model/dronut/joint_state', 'joint_states'),
-                    ('/dronut/camera1/image_raw', '/camera1/image_raw'),
+                    ('/camera_info1', '/ircam1/camera_info'),
+                    ('/ircam1', '/ircam1/image_raw'),
+                    ('/ircam1/points', '/ircam1/points'),
+                    # ('/camera_info2', '/ircam2/camera_info'),
+                    # ('/ircam2', '/ircam2/image_raw'),
+                    # ('/ircam2/points', '/ircam2/points'),
                     ],
         output='screen'
     )

@@ -135,12 +135,12 @@ CMakeFiles/dronut_controller_uninstall.dir/clean:
 CMakeFiles/drone_control_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_control_node.dir/build.make CMakeFiles/drone_control_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_control_node.dir/build.make CMakeFiles/drone_control_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nathan/dronut/build/dronut_controller/CMakeFiles --progress-num=1,2,3,4 "Built target drone_control_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nathan/dronut/build/dronut_controller/CMakeFiles --progress-num=1,2,3,4,5 "Built target drone_control_node"
 .PHONY : CMakeFiles/drone_control_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/drone_control_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/dronut/build/dronut_controller/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/dronut/build/dronut_controller/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drone_control_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/dronut/build/dronut_controller/CMakeFiles 0
 .PHONY : CMakeFiles/drone_control_node.dir/rule

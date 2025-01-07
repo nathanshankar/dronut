@@ -111,11 +111,26 @@ CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nathan/dronut/src/dronut_controller/src/joy_to_cmd_vel_node.cpp -o CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.s
 
+CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o: CMakeFiles/drone_control_node.dir/flags.make
+CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o: /home/nathan/dronut/src/dronut_controller/src/frame_remapper.cpp
+CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o: CMakeFiles/drone_control_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathan/dronut/build/dronut_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o -MF CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o.d -o CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o -c /home/nathan/dronut/src/dronut_controller/src/frame_remapper.cpp
+
+CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nathan/dronut/src/dronut_controller/src/frame_remapper.cpp > CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.i
+
+CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nathan/dronut/src/dronut_controller/src/frame_remapper.cpp -o CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.s
+
 # Object files for target drone_control_node
 drone_control_node_OBJECTS = \
 "CMakeFiles/drone_control_node.dir/src/main.cpp.o" \
 "CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o" \
-"CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o"
+"CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o" \
+"CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o"
 
 # External object files for target drone_control_node
 drone_control_node_EXTERNAL_OBJECTS =
@@ -123,6 +138,7 @@ drone_control_node_EXTERNAL_OBJECTS =
 drone_control_node: CMakeFiles/drone_control_node.dir/src/main.cpp.o
 drone_control_node: CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o
 drone_control_node: CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o
+drone_control_node: CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o
 drone_control_node: CMakeFiles/drone_control_node.dir/build.make
 drone_control_node: /opt/ros/jazzy/lib/libstatic_transform_broadcaster_node.so
 drone_control_node: /opt/ros/jazzy/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so
@@ -143,6 +159,20 @@ drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_in
 drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_introspection_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/libcontrol_msgs__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libcontrol_msgs__rosidl_generator_c.so
+drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_generator_c.so
+drone_control_node: /opt/ros/jazzy/lib/libros_gz_interfaces__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libros_gz_interfaces__rosidl_generator_c.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/libtf2_ros.so
 drone_control_node: /opt/ros/jazzy/lib/libtf2.so
 drone_control_node: /opt/ros/jazzy/lib/libmessage_filters.so
@@ -167,6 +197,14 @@ drone_control_node: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.
 drone_control_node: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/librcl_action.so
 drone_control_node: /opt/ros/jazzy/lib/librcl.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/librcl_yaml_param_parser.so
 drone_control_node: /opt/ros/jazzy/lib/libtracetools.so
 drone_control_node: /opt/ros/jazzy/lib/librcl_logging_interface.so
@@ -185,26 +223,35 @@ drone_control_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_
 drone_control_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 drone_control_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
-drone_control_node: /opt/ros/jazzy/lib/libcontrol_msgs__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libcontrol_msgs__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_generator_c.so
+drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_py.so
+drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
+drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
+drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
@@ -212,39 +259,6 @@ drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_c.so
 drone_control_node: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
-drone_control_node: /opt/ros/jazzy/lib/libros_gz_interfaces__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libros_gz_interfaces__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
-drone_control_node: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 drone_control_node: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 drone_control_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -263,12 +277,14 @@ drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_c.so
 drone_control_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 drone_control_node: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+drone_control_node: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 drone_control_node: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
 drone_control_node: /opt/ros/jazzy/lib/librcpputils.so
 drone_control_node: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 drone_control_node: /opt/ros/jazzy/lib/librcutils.so
 drone_control_node: CMakeFiles/drone_control_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nathan/dronut/build/dronut_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable drone_control_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nathan/dronut/build/dronut_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable drone_control_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drone_control_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

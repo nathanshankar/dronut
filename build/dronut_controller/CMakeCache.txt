@@ -652,6 +652,9 @@ tf2_msgs_DIR:PATH=/opt/ros/jazzy/share/tf2_msgs/cmake
 //The directory containing a CMake configuration file for tf2_ros.
 tf2_ros_DIR:PATH=/opt/ros/jazzy/share/tf2_ros/cmake
 
+//The directory containing a CMake configuration file for tf2_sensor_msgs.
+tf2_sensor_msgs_DIR:PATH=/opt/ros/jazzy/share/tf2_sensor_msgs/cmake
+
 //The directory containing a CMake configuration file for tinyxml2_vendor.
 tinyxml2_vendor_DIR:PATH=/opt/ros/jazzy/share/tinyxml2_vendor/cmake
 

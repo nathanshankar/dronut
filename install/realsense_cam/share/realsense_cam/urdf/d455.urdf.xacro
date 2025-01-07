@@ -12,7 +12,7 @@ aluminum peripherial evaluation case.
   <!-- Includes -->
   <xacro:include filename="$(find realsense_cam)/urdf/materials.urdf.xacro" />
   <xacro:include filename="$(find realsense_cam)/urdf/usb_plug.urdf.xacro" />
-  <xacro:include filename="$(find realsense_cam)/urdf/d455.gazebo.xacro"/>
+  <!--<xacro:include filename="$(find realsense_cam)/urdf/d455.gazebo.xacro"/>-->
 
   <xacro:macro name="sensor_d455" params="parent *origin name:=camera use_nominal_extrinsics:=false">
     <xacro:arg name="add_plug" default="false" />
@@ -110,7 +110,7 @@ aluminum peripherial evaluation case.
       <link name="${name}_infra1_frame"/>
 
       <joint name="${name}_infra1_optical_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <parent link="${name}_infra1_frame" />
         <child link="${name}_infra1_optical_frame" />
       </joint>
@@ -125,7 +125,7 @@ aluminum peripherial evaluation case.
       <link name="${name}_infra2_frame"/>
 
       <joint name="${name}_infra2_optical_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <parent link="${name}_infra2_frame" />
         <child link="${name}_infra2_optical_frame" />
       </joint>

@@ -1,0 +1,44 @@
+[0.016s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[0.187s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.238s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.264s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.271s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.281s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.292s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.344s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.345s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.409s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.462s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.507s] -- Found tf2: 0.36.7 (/opt/ros/jazzy/share/tf2/cmake)
+[0.510s] -- Found tf2_ros: 0.36.7 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.601s] -- Found control_msgs: 5.3.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[0.648s] -- Found ros_gz_interfaces: 1.0.7 (/opt/ros/jazzy/share/ros_gz_interfaces/cmake)
+[0.675s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.745s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.745s] -- Configured cppcheck include dirs: /home/nathan/dronut/src/dronut_controller/include
+[0.746s] -- Configured cppcheck exclude dirs and/or files: 
+[0.746s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.746s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.746s] -- Added test 'lint_cmake' to check CMake code style
+[0.746s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.747s] -- Added test 'uncrustify' to check C / C++ code style
+[0.747s] -- Configured uncrustify additional arguments: 
+[0.748s] -- Added test 'xmllint' to check XML markup files
+[0.748s] -- Configuring done (0.7s)
+[0.751s] [31mCMake Error at CMakeLists.txt:22 (add_executable):
+[0.751s]   Cannot find source file:
+[0.751s] 
+[0.751s]     src/frame_rempapper.cpp
+[0.751s] 
+[0.751s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[0.751s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[0.751s]   .f95 .f03 .hip .ispc
+[0.751s] 
+[0.751s] [0m
+[0.754s] [31mCMake Error at CMakeLists.txt:22 (add_executable):
+[0.754s]   No SOURCES given to target: drone_control_node
+[0.754s] 
+[0.754s] [0m
+[0.754s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.762s] gmake: *** [Makefile:321: cmake_check_build_system] Error 1
+[0.764s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20

@@ -14,7 +14,7 @@ find_package(tf2_ros REQUIRED)
 find_package(control_msgs REQUIRED)
 find_package(ros_gz_interfaces REQUIRED)
 find_package(trajectory_msgs REQUIRED)
-
+find_package(tf2_sensor_msgs REQUIRED)
 # Include directories
 include_directories(include)
 
@@ -24,6 +24,7 @@ add_executable(drone_control_node
     src/main.cpp
     src/birotor_drone_controller.cpp
     src/joy_to_cmd_vel_node.cpp
+    src/frame_remapper.cpp
 )
 
 # Link dependencies
@@ -36,6 +37,7 @@ ament_target_dependencies(drone_control_node
     control_msgs
     ros_gz_interfaces
     trajectory_msgs
+    tf2_sensor_msgs
     fastcdr
 )
 target_include_directories(drone_control_node PRIVATE include)

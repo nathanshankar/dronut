@@ -1,0 +1,33 @@
+[0.779s] Invoking command in '/home/nathan/dronut/src/realsense_cam': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/realsense_cam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/realsense_cam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_cam build --build-base /home/nathan/dronut/build/realsense_cam/build install --record /home/nathan/dronut/build/realsense_cam/install.log --single-version-externally-managed install_data
+[0.899s] /home/nathan/.local/lib/python3.12/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.899s]   warnings.warn(msg)
+[0.995s] running egg_info
+[1.012s] writing ../../build/realsense_cam/realsense_cam.egg-info/PKG-INFO
+[1.013s] writing dependency_links to ../../build/realsense_cam/realsense_cam.egg-info/dependency_links.txt
+[1.013s] writing requirements to ../../build/realsense_cam/realsense_cam.egg-info/requires.txt
+[1.013s] writing top-level names to ../../build/realsense_cam/realsense_cam.egg-info/top_level.txt
+[1.045s] reading manifest file '../../build/realsense_cam/realsense_cam.egg-info/SOURCES.txt'
+[1.046s] writing manifest file '../../build/realsense_cam/realsense_cam.egg-info/SOURCES.txt'
+[1.046s] running build
+[1.046s] running build_py
+[1.046s] copying realsense_cam/__init__.py -> /home/nathan/dronut/build/realsense_cam/build/lib/realsense_cam
+[1.047s] running install
+[1.050s] running install_lib
+[1.066s] running install_data
+[1.066s] copying resource/realsense_cam -> /home/nathan/dronut/install/realsense_cam/share/ament_index/resource_index/packages
+[1.066s] copying package.xml -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam
+[1.066s] copying launch/depth.launch.py -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/launch
+[1.066s] copying meshes/plug_collision.stl -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/meshes
+[1.066s] copying meshes/d455.stl -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/meshes
+[1.068s] copying meshes/plug.stl -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/meshes
+[1.068s] copying urdf/materials.urdf.xacro -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf
+[1.068s] copying urdf/test_d455_camera.urdf.xacro -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf
+[1.068s] copying urdf/d455.urdf.xacro -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf
+[1.068s] copying urdf/usb_plug.urdf.xacro -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf
+[1.069s] copying urdf/d455.gazebo.xacro -> /home/nathan/dronut/install/realsense_cam/share/realsense_cam/urdf
+[1.069s] running install_egg_info
+[1.084s] removing '/home/nathan/dronut/install/realsense_cam/lib/python3.12/site-packages/realsense_cam-0.0.0-py3.12.egg-info' (and everything under it)
+[1.085s] Copying ../../build/realsense_cam/realsense_cam.egg-info to /home/nathan/dronut/install/realsense_cam/lib/python3.12/site-packages/realsense_cam-0.0.0-py3.12.egg-info
+[1.085s] running install_scripts
+[1.172s] writing list of installed files to '/home/nathan/dronut/build/realsense_cam/install.log'
+[1.191s] Invoked command in '/home/nathan/dronut/src/realsense_cam' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/dronut/build/realsense_cam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/dronut/install/realsense_cam/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_cam build --build-base /home/nathan/dronut/build/realsense_cam/build install --record /home/nathan/dronut/build/realsense_cam/install.log --single-version-externally-managed install_data

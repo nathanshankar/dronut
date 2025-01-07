@@ -608,44 +608,16 @@
     <child link="base_screw" />
     <axis xyz="0 0 1"/>
 </joint>
+
 <gazebo>
- <sensor name="dronut_cam" type="camera">
-        <pose>0.01233 -0.03 .01878 0 0 0</pose>
-        <camera>
-          <image>
-            <width>640</width>
-            <height>480</height>
-          </image>
-          <clip>
-            <near>0.1</near>
-            <far>100</far>
-          </clip>
-          <distortion>
-            <k1>1.578758331993112829e-01</k1>
-            <k2>-5.784303605943902360e-01</k2>
-            <k3>-8.740723680089258069e-03</k3>
-            <p1>1.359451618091441112e-03</p1>
-            <p2>1.640043376158566713e-01</p2>
-            <center>0.5 0.5</center>
-          </distortion>
-          <lens>
-            <type>pinhole</type>
-            <scale_to_hfov>false</scale_to_hfov>
-            <intrinsics>
-              <fx>4.970870507466349295e+02</fx>
-              <fy>4.976011127668800782e+02</fy>
-              <cx>3.168387473166100108e+02</cx>
-              <cy>2.342740555042151982e+02</cy>
-              <s>0.0</s>
-            </intrinsics>
-          </lens>
-        </camera>
-        <always_on>1</always_on>
-        <update_rate>30</update_rate>
-        <visualize>true</visualize>
-        <topic>camera</topic>
-      </sensor>
+    <plugin filename="libgz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>$(find dronut_controller)/config/dronut_controllers.yaml</parameters>
+            <ros>
+                <remapping>/controller_manager/robot_description:=/robot_description</remapping>
+            </ros>
+    </plugin>
 </gazebo>
+
 <ros2_control name="dronut" type="system">
     <hardware>
         <plugin>gz_ros2_control/GazeboSimSystem</plugin>
@@ -688,12 +660,51 @@
     </joint>
 </ros2_control>
 
-<gazebo>
-    <plugin filename="libgz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-        <parameters>$(find dronut_controller)/config/dronut_controllers.yaml</parameters>
-            <ros>
-                <remapping>/controller_manager/robot_description:=/robot_description</remapping>
-            </ros>
-    </plugin>
+<gazebo reference="camera_infra1_optical_frame">
+  <sensor name="depth_camera1" type="depth">
+    <update_rate>10</update_rate>
+    <topic>ircam1</topic>
+    <camera_info_topic>camera_info1</camera_info_topic> 
+    <camera>
+      <horizontal_fov>1.05</horizontal_fov>
+      <image>
+        <width>256</width>
+        <height>256</height>
+        <format>R_FLOAT32</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <always_on>true</always_on>
+    <visualize>true</visualize>
+  </sensor>
 </gazebo>
+
+<gazebo reference="camera_infra2_optical_frame">
+  <sensor name="depth_camera2" type="depth">
+    <update_rate>10</update_rate>
+    <topic>ircam2</topic>
+    <camera_info_topic>camera_info2</camera_info_topic> 
+    <always_publish_tf>false</always_publish_tf>
+    <camera>
+      <horizontal_fov>1.05</horizontal_fov>
+      <image>
+        <width>256</width>
+        <height>256</height>
+        <format>R_FLOAT32</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <always_on>true</always_on>
+    <visualize>true</visualize>
+  </sensor>
+</gazebo>
+
+
+
 </robot>
