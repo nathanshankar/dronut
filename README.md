@@ -8,7 +8,7 @@ This repository contains a ROS 2 simulation for the Dronut, the world's first bi
 
 [Simulation](https://github.com/user-attachments/assets/95d4e163-17b7-4247-a3b8-0e919f6e7af4)
 
-## Features
+## Features of the actual drone:
 - **Bi-rotor ducted drone**: Ensures safe operation in tight spaces.
 - **Indoor and GPS-denied navigation**: Equipped with advanced algorithms for localization and control.
 - **High-definition video streaming**: Provides real-time video feedback.
