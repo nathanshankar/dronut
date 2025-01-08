@@ -2,7 +2,8 @@
 
 This repository contains a ROS 2 simulation for the Dronut, the world's first bi-rotor ducted drone. Designed for safe indoor operation, confined spaces, and GPS-denied environments, the Dronut excels in high maneuverability, real-time high-definition video streaming, LiDAR data collection, and providing operators with critical insights to enhance efficiency, reduce costs, and improve safety in hazardous environments. For more details about the Dronut, visit the official [product page](https://cleorobotics.com/product/).
 ![image](https://github.com/user-attachments/assets/ae429d89-a84f-48c3-b145-3ca5d94d0510)
-[Source](https://cleorobotics.com/product/)
+
+[Image Source](https://cleorobotics.com/product/)
 
 ## Features
 - **Bi-rotor ducted drone**: Ensures safe operation in tight spaces.
