@@ -5,6 +5,9 @@ This repository contains a ROS 2 simulation for the Dronut, the world's first bi
 
 [Image Source](https://cleorobotics.com/product/)
 
+
+[Simulation](https://github.com/user-attachments/assets/95d4e163-17b7-4247-a3b8-0e919f6e7af4)
+
 ## Features
 - **Bi-rotor ducted drone**: Ensures safe operation in tight spaces.
 - **Indoor and GPS-denied navigation**: Equipped with advanced algorithms for localization and control.
@@ -15,8 +18,7 @@ This repository contains a ROS 2 simulation for the Dronut, the world's first bi
 ## Installation
 ### Prerequisites
 Ensure you have the following installed:
-- ROS 2 (Galactic, Humble, or Rolling recommended)
-- Python 3.8+
+- ROS 2 (Works on Humble and Jazzy)
 - Gazebo or Ignition for simulation
 - `rosdep` for managing dependencies
 
