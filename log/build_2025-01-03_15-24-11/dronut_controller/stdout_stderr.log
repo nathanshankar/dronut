@@ -1,8 +1,0 @@
-[ 25%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o[0m
-[ 50%] [32m[1mLinking CXX executable drone_control_node[0m
-/usr/bin/ld: CMakeFiles/drone_control_node.dir/src/main.cpp.o: in function `void std::_Construct<JoyToCmdVelNode>(JoyToCmdVelNode*)':
-main.cpp:(.text._ZSt10_ConstructI15JoyToCmdVelNodeJEEvPT_DpOT0_[_ZSt10_ConstructI15JoyToCmdVelNodeJEEvPT_DpOT0_]+0x35): undefined reference to `JoyToCmdVelNode::JoyToCmdVelNode()'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/drone_control_node.dir/build.make:271: drone_control_node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_control_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

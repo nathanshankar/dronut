@@ -1,5 +1,0 @@
-[0.008s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
-[0.064s] gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.4', needed by 'drone_control_node'. Stop.
-[0.065s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_control_node.dir/all] Error 2
-[0.065s] gmake: *** [Makefile:146: all] Error 2
-[0.066s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/dronut/install/realsense_cam:/home/nathan/dronut/install/dronut_w_cam:/home/nathan/dronut/install/dronut_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20

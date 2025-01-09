@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/drone_control_node.dir/src/main.cpp.o: in function `main':
-main.cpp:(.text+0x0): multiple definition of `main'; CMakeFiles/drone_control_node.dir/src/trial_code.cpp.o:trial_code.cpp:(.text+0x69): first defined here
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/drone_control_node.dir/build.make:264: drone_control_node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_control_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

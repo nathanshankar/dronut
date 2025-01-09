@@ -1,2 +1,0 @@
-[console_scripts]
-move = dronut_w_cam.move:main

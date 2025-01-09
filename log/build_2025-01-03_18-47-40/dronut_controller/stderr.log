@@ -1,4 +1,0 @@
-[01m[K/home/nathan/dronut/src/dronut_controller/src/birotor_drone_controller.cpp:[m[K In member function ‘[01m[Kvoid BirotorDroneController::[01;32m[Kpublish_joint_trajectory[m[K()[m[K’:
-[01m[K/home/nathan/dronut/src/dronut_controller/src/birotor_drone_controller.cpp:104:74:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Klong int[m[K’ to ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} changes value from ‘[01m[K5000000000[m[K’ to ‘[01m[K705032704[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
-  104 |     joint_trajectory_msg.points[0].time_from_start = rclcpp::Duration(0, [01;35m[K5000000000[m[K);  // 5 milliseconds
-      |                                                                          [01;35m[K^~~~~~~~~~[m[K

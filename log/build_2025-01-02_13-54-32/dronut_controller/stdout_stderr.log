@@ -1,7 +1,0 @@
-gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.4', needed by 'drone_control_node'. Stop.
-gmake[2]: *** Waiting for unfinished jobs....
-[ 25%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/main.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o[0m
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_control_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

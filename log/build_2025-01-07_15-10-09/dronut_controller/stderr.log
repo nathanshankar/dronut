@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o: in function `FrameRemapper::callback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
-frame_remapper.cpp:(.text+0x9fa): undefined reference to `void tf2::doTransform<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >(sensor_msgs::msg::PointCloud2_<std::allocator<void> > const&, sensor_msgs::msg::PointCloud2_<std::allocator<void> >&, geometry_msgs::msg::TransformStamped_<std::allocator<void> > const&)'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/drone_control_node.dir/build.make:288: drone_control_node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_control_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
