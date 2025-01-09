@@ -1,0 +1,10 @@
+/home/nathan/dronut/build/joy_test/CMakeFiles/uninstall.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/joy_test_uninstall.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/joy_test_node.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/test.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/edit_cache.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/rebuild_cache.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/list_install_components.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/install.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/install/local.dir
+/home/nathan/dronut/build/joy_test/CMakeFiles/install/strip.dir

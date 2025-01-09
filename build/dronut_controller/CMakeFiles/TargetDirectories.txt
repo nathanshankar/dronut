@@ -1,0 +1,10 @@
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/uninstall.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/dronut_controller_uninstall.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/drone_control_node.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/test.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/edit_cache.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/rebuild_cache.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/list_install_components.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/install.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/install/local.dir
+/home/nathan/dronut/build/dronut_controller/CMakeFiles/install/strip.dir

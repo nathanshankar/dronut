@@ -1,0 +1,2 @@
+[console_scripts]
+move = dronut_description.move:main

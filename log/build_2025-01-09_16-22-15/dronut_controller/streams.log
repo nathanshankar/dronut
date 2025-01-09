@@ -1,0 +1,83 @@
+[0.031s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nathan/dronut/src/dronut_controller -DCMAKE_INSTALL_PREFIX=/home/nathan/dronut/install/dronut_controller
+[0.406s] -- The C compiler identification is GNU 13.3.0
+[0.406s] -- The CXX compiler identification is GNU 13.3.0
+[0.407s] -- Detecting C compiler ABI info
+[0.407s] -- Detecting C compiler ABI info - done
+[0.407s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.407s] -- Detecting C compile features
+[0.407s] -- Detecting C compile features - done
+[0.407s] -- Detecting CXX compiler ABI info
+[0.412s] -- Detecting CXX compiler ABI info - done
+[0.424s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.424s] -- Detecting CXX compile features
+[0.424s] -- Detecting CXX compile features - done
+[0.431s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.575s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.694s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.752s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.768s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.787s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.810s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.896s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.900s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.999s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.022s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.048s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.160s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.234s] -- Found tf2: 0.36.7 (/opt/ros/jazzy/share/tf2/cmake)
+[1.246s] -- Found tf2_ros: 0.36.7 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.382s] -- Found control_msgs: 5.3.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[1.440s] -- Found ros_gz_interfaces: 1.0.7 (/opt/ros/jazzy/share/ros_gz_interfaces/cmake)
+[1.470s] -- Found tf2_sensor_msgs: 0.36.7 (/opt/ros/jazzy/share/tf2_sensor_msgs/cmake)
+[1.484s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.589s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.589s] -- Configured cppcheck include dirs: /home/nathan/dronut/src/dronut_controller/include
+[1.589s] -- Configured cppcheck exclude dirs and/or files: 
+[1.590s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.590s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.591s] -- Added test 'lint_cmake' to check CMake code style
+[1.592s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.594s] -- Added test 'uncrustify' to check C / C++ code style
+[1.595s] -- Configured uncrustify additional arguments: 
+[1.596s] -- Added test 'xmllint' to check XML markup files
+[1.598s] -- Configuring done (1.6s)
+[1.617s] -- Generating done (0.0s)
+[1.621s] -- Build files have been written to: /home/nathan/dronut/build/dronut_controller
+[1.635s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nathan/dronut/src/dronut_controller -DCMAKE_INSTALL_PREFIX=/home/nathan/dronut/install/dronut_controller
+[1.637s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[1.697s] [ 20%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/main.cpp.o[0m
+[1.697s] [ 40%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/joy_to_cmd_vel_node.cpp.o[0m
+[1.697s] [ 60%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/birotor_drone_controller.cpp.o[0m
+[1.700s] [ 80%] [32mBuilding CXX object CMakeFiles/drone_control_node.dir/src/frame_remapper.cpp.o[0m
+[8.637s] [100%] [32m[1mLinking CXX executable drone_control_node[0m
+[9.131s] [100%] Built target drone_control_node
+[9.144s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/dronut/build/dronut_controller -- -j20 -l20
+[9.145s] Invoking command in '/home/nathan/dronut/build/dronut_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/dronut/build/dronut_controller
+[9.154s] -- Install configuration: ""
+[9.154s] -- Installing: /home/nathan/dronut/install/dronut_controller/lib/dronut_controller/drone_control_node
+[9.161s] -- Set non-toolchain portion of runtime path of "/home/nathan/dronut/install/dronut_controller/lib/dronut_controller/drone_control_node" to ""
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/maze1.sdf
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/sample.wbt
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/.sample.jpg
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//worlds/trial.sdf
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//launch
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//launch/drone.launch.py
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//config
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller//config/dronut_controllers.yaml
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/ament_index/resource_index/package_run_dependencies/dronut_controller
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/ament_index/resource_index/parent_prefix_path/dronut_controller
+[9.161s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/ament_prefix_path.sh
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/ament_prefix_path.dsv
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/path.sh
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/environment/path.dsv
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.bash
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.sh
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.zsh
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/local_setup.dsv
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/package.dsv
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/ament_index/resource_index/packages/dronut_controller
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/cmake/dronut_controllerConfig.cmake
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/cmake/dronut_controllerConfig-version.cmake
+[9.162s] -- Installing: /home/nathan/dronut/install/dronut_controller/share/dronut_controller/package.xml
+[9.163s] Invoked command in '/home/nathan/dronut/build/dronut_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/dronut/build/dronut_controller
